@@ -5,7 +5,7 @@ name: default
 
 steps:
 - name: build-docker-image
-  image: reg-01.ogilvie.us/app
+  image: plugins/docker
   commands:
     - echo Building image
   when:
