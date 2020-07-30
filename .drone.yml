@@ -13,3 +13,10 @@ steps:
       - push
     branch:
       - master
+  settings:
+    repo: aco950/app
+    username:
+      from_secret: docker_username
+    password:
+      from_secret: docker_password
+
