@@ -13,4 +13,9 @@ steps:
       - push
     branch:
       - master
+  environment:
+    USERNAME:
+      from_secret: docker_username
+    PASSWORD:
+      from_secret: docker_password
 
