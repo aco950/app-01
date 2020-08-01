@@ -9,10 +9,10 @@ steps:
   settings:
     debug: true
     repo: aco950/app
-    #username:
-    #  from_secret: docker_username
-    #password:
-    #  from_secret: docker_password
+    username:
+      from_secret: docker_username
+    password:
+      from_secret: docker_password
     #username: username
     #password: password
   commands:
