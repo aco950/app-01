@@ -3,6 +3,7 @@ kind: pipeline
 name: build 
 type: docker
 
+# Do not start any builds if we are only doing tags:
 trigger:
   event:
     exclude:
