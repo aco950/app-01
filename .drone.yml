@@ -19,6 +19,7 @@ steps:
 
   when:
     event:
-      - push
+      #- push
+      - tag 
     branch:
       - master
