@@ -1,7 +1,6 @@
 ---
-name: default
-
 kind: pipeline
+name: build 
 type: docker
 
 steps:
@@ -23,9 +22,13 @@ steps:
         - tag 
 
 
+---
+kind: pipeline
+name: deploy
+
 steps:
-- name: deploy
-  image: reg-01.ogilvie.us/app
+  - name: nomad 
+    image: loq9/drone-nomad
   settings:
     addr: http://192.168.4.91
     template: app.nomad
