@@ -20,8 +20,9 @@ steps:
       exclude:
         - tag 
 
-- name: deploy
-  commands:
-  - terraform init
-  - terraform plan
+---
+pipeline:
+  terraform:
+  image: reg-01.ogilvie.us/app
+  plan: true
 
