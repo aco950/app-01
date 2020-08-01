@@ -21,16 +21,3 @@ steps:
       exclude:
         - tag 
 
-
----
-kind: pipeline
-name: deploy
-type: nomad 
-
-steps:
-  - name: nomad 
-    image: reg-01.ogilvie.us/app
-    settings:
-      addr: http://192.168.4.91:4646
-      template: app.nomad
-
