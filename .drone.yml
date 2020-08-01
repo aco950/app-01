@@ -30,6 +30,6 @@ steps:
   - name: nomad 
     image: loq9/drone-nomad
     settings:
-      addr: http://192.168.4.91
+      addr: http://192.168.4.91:4647
       template: app.nomad
 
