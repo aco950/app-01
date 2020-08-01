@@ -21,3 +21,12 @@ steps:
     event:
       exclude:
         - tag 
+
+
+steps:
+- name: deploy
+  image: reg-01.ogilvie.us/app
+  settings:
+    addr: http://192.168.4.91
+    template: app.nomad
+
