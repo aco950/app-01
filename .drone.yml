@@ -17,6 +17,10 @@ steps:
   commands:
     - echo Building Image
 
+  when:
+    event:
+      - push
+
   trigger:
     event:
       - push 
