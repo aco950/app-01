@@ -22,7 +22,7 @@ steps:
       include:
       - push
       exclude:
-        - tag
+      - tag
     branch:
       - master
 
