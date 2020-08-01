@@ -1,2 +1,3 @@
 *.keep
+.version
 dockerconfigjson
