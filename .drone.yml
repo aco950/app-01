@@ -1,14 +1,17 @@
 ---
+name: default
+
 kind: pipeline
 type: docker
-name: default
 
 steps:
 - name: build
-  image: reg-01.ogilvie.us/app
+  #image: reg-01.ogilvie.us/app
+  image: app
   settings:
     debug: true
     repo: aco950/app
+    registry: reg-01.ogilvie.us
     #username:
     #  from_secret: docker_username
     #password:
