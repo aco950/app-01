@@ -5,8 +5,9 @@ name: default
 
 steps:
 - name: build
-  image: reg-01.ogilvie.us/app:latest
+  image: reg-01.ogilvie.us/app
   settings:
+    debug: true
     username:
       from_secret: docker_username
     password:
