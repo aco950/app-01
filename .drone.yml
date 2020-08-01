@@ -1,7 +1,7 @@
 ---
 kind: pipeline
 name: build 
-#type: docker
+type: docker
 
 steps:
 
