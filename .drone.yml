@@ -6,8 +6,8 @@ type: docker
 
 steps:
 - name: build
-  #image: reg-01.ogilvie.us/app
-  image: app
+  image: reg-01.ogilvie.us/app
+  #image: app
   settings:
     debug: true
     repo: aco950/app
