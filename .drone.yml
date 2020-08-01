@@ -7,10 +7,9 @@ type: docker
 steps:
 - name: build
   image: reg-01.ogilvie.us/app
-  #image: app
   settings:
-    username: username
-    password: password
+    #username: username
+    #password: password
     debug: true
     repo: aco950/app
     registry: reg-01.ogilvie.us
