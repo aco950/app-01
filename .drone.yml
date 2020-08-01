@@ -19,7 +19,7 @@ steps:
 
   when:
     event:
-      - push
+      #- push
       exclude:
         - tag
     branch:
