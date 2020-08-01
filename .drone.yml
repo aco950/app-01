@@ -19,9 +19,5 @@ steps:
 
   when:
     event:
-      - push
-
-  trigger:
-    event:
-      - push 
-
+      exclude:
+        - tag 
