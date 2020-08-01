@@ -3,6 +3,11 @@ kind: pipeline
 name: build 
 type: docker
 
+trigger:
+  event:
+    exclude:
+      - tag
+
 steps:
 
 - name: build
@@ -20,9 +25,9 @@ steps:
       exclude:
         - tag 
 
----
-pipeline:
-  terraform:
-  image: reg-01.ogilvie.us/app
-  plan: true
+#---
+#pipeline:
+#  terraform:
+#  image: reg-01.ogilvie.us/app
+#  plan: true
 
