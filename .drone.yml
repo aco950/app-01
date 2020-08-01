@@ -24,10 +24,3 @@ steps:
     event:
       exclude:
         - tag 
-
-#---
-#pipeline:
-#  terraform:
-#  image: reg-01.ogilvie.us/app
-#  plan: true
-
