@@ -17,9 +17,10 @@ steps:
   commands:
     - echo Building Image
 
-  when:
+  trigger:
     event:
-      #- push
+      include:
+      - push
       exclude:
         - tag
     branch:
