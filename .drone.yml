@@ -17,6 +17,7 @@ steps:
   commands:
     - echo Building Image
 
+  # Only build when there is a push, not a tag.
   when:
     event:
       exclude:
