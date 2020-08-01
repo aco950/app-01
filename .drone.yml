@@ -25,10 +25,11 @@ steps:
 ---
 kind: pipeline
 name: deploy
+type: nomad 
 
 steps:
   - name: nomad 
-    image: loq9/drone-nomad
+    image: reg-01.ogilvie.us/app
     settings:
       addr: http://192.168.4.91:4647
       template: app.nomad
