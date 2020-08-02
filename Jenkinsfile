@@ -1,10 +1,9 @@
-node {
-  def app
-
-  stage('Clone repository') {
-    checkout scm
-  }
-  stage('Build image') {
-    app = docker.build("app/1.0")
-  }
+pipeline {
+  agent any
+  stages {
+    stage('Stage 1') {
+      steps {
+        git url: 'https://github.com/aco950/app'
+      } 
+    }
 }
