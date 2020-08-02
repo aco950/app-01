@@ -16,6 +16,8 @@ steps:
     debug: true
     repo: aco950/app
     registry: reg-01.ogilvie.us
+  username: username
+  password: password
   commands:
     - echo Building Image
   when:
