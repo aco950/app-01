@@ -1,6 +1,7 @@
 ---
 kind: pipeline
 name: build 
+type: docker
 
 # Do not start any builds if we are only doing tags:
 trigger:
@@ -9,11 +10,16 @@ trigger:
       - tag
 
 steps:
-
 - name: build
-  image: plugins/docker
+  image: reg-01.ogilvie.us/app
   settings:
     debug: true
-    repo: reg-01.ogilvie.us/aco950/app
+    repo: aco950/app
     registry: reg-01.ogilvie.us
+  commands:
+    - echo Building Image
+  when:
+    event:
+      exclude:
+        - tag 
 
