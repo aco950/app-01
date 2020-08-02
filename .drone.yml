@@ -12,7 +12,8 @@ steps:
 
 - name: build
   image: plugins/docker
-  repo: reg-01.ogilvie.us/app
+  repo: aco950/app
   registry: reg-01.ogilvie.us
-  tags: 1.0
+  tags:
+    - latest
 
