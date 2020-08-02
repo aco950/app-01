@@ -14,6 +14,6 @@ steps:
   image: plugins/docker
   settings:
     debug: true
-    repo: aco950/app
+    repo: reg-01.ogilvie.us/aco950/app
     registry: reg-01.ogilvie.us
 
