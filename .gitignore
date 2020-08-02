@@ -2,3 +2,4 @@
 *.keep
 .version
 dockerconfigjson
+z-files
