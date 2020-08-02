@@ -6,4 +6,5 @@ pipeline {
         git url: 'https://github.com/aco950/app'
       } 
     }
+  }
 }
