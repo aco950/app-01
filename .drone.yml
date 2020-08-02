@@ -12,3 +12,7 @@ steps:
 
 - name: build
   image: plugins/docker
+  repo: reg-01.ogilvie.us/app
+  registry: reg-01.ogilvie.us
+  tags: latest
+
