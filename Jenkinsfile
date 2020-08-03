@@ -1,4 +1,3 @@
-# vim:set ft=java
 pipeline {
   agent any
   environment {
