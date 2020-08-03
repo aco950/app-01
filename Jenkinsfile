@@ -2,6 +2,7 @@ pipeline {
   agent any
   environment {
     registry = "reg-01.ogilvie.us/app"
+    registryCredential = 'docker_registry'
   }
   stages {
     stage('Stage 1') {
@@ -21,7 +22,7 @@ pipeline {
     stage('Stage 3') {
       steps {
         script {
-          docker.withRegistry('https://reg-01.ogilvie.us') {
+          docker.withRegistry('https://reg-01.ogilvie.us', registryCredential) {
             dockerImage.push()
           }
         }
