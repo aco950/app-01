@@ -1,8 +1,5 @@
 pipeline {
   agent any
-  environment {
-    GIT 
-  }
   stages {
     stage('Stage 1') {
       steps {
