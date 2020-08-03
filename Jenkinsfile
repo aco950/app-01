@@ -1,3 +1,4 @@
+# vim:set ft=java
 pipeline {
   agent any
   environment {
@@ -18,5 +19,15 @@ pipeline {
         }
       }
     }
+    stage('Stage 3') {
+      steps {
+        script {
+          docker.withRegistry('registry.ogilvie.us') {
+            dockerImage.push()
+          }
+        }
+      }
+    }
   }
 }
+
