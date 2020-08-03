@@ -28,6 +28,11 @@ pipeline {
         }
       }
     }
+    stage('Stage 4') {
+      steps {
+        sh 'terraform init'
+      }
+    }
   }
 }
 
