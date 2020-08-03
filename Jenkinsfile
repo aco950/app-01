@@ -21,7 +21,7 @@ pipeline {
     stage('Stage 3') {
       steps {
         script {
-          docker.withRegistry('registry.ogilvie.us') {
+          docker.withRegistry('https://registry.ogilvie.us') {
             dockerImage.push()
           }
         }
