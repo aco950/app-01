@@ -3,7 +3,9 @@ pipeline {
   stages {
     stage('Stage 1') {
       steps {
-        git url: 'ssh://git@github.com:aco950/app.git'
+        git branch: 'master',
+          credendialsID: 'b74da730-f1c1-4f20-af0c-12c48062eebb',
+          url: 'https://github.com/aco950/app.git'
       } 
     }
   }
