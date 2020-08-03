@@ -31,6 +31,8 @@ pipeline {
     stage('Stage 4') {
       steps {
         sh 'terraform init'
+        sh 'terraform plan -out=tfplan'
+        sh 'terraform apply tfplan'
       }
     }
   }
