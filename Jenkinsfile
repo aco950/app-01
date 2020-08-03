@@ -12,7 +12,9 @@ pipeline {
       } 
     }
     stage('Stage 2') {
-      docker.build registry
+      steps {
+        docker.build registry
+      }
     }
   }
 }
