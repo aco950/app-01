@@ -1,7 +1,7 @@
 pipeline {
   agent any
   environment {
-    registry = "reg-01.ogilvie.us/app"
+    registry = "reg-01.ogilvie.us/app/1.2"
     registryCredential = 'docker_registry'
   }
   stages {
