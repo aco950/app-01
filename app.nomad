@@ -5,6 +5,12 @@ job "app" {
   //type = "service"
   group "development" {
     count = 6
+    // Enable rolling updates of the service:
+    update {
+      max_parallel = 2
+      min_healthy_time = "30s"
+      healthy_deadline = "10m"
+    }
     ephemeral_disk {
       size = 300
     }
