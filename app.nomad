@@ -1,5 +1,6 @@
 # vi: syntax=javascript
 job "app" {
+  region = "global"
   datacenters = ["dc4"]
   //type = "service"
   group "development" {
