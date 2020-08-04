@@ -5,6 +5,6 @@ node {
     checkout scm
   }
   stage('Stage 2') {
-    app = docker.build("app/latest")
+    app = docker.build("app/1.1")
   }
 }
