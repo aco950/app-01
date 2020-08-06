@@ -4,7 +4,9 @@ job "app" {
   datacenters = ["dc4"]
   //type = "service"
   group "development" {
-    count = 6
+    // Use 6 to test NGINX load balancing:
+    //count = 6
+    count = 3
     // Enable rolling updates of the service:
     update {
       max_parallel = 2
